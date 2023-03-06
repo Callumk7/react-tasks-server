@@ -1,10 +1,8 @@
 import express from 'express';
 import cors from 'cors';
-import { PrismaClient } from '@prisma/client';
 import { tasksRouter } from './routes/tasks';
 import { projectsRouter } from './routes/projects';
 
-const prisma = new PrismaClient();
 const app = express();
 
 // Middleware
