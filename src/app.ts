@@ -9,6 +9,11 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // for parsing application/json
 
+app.use((req, res, next) => {
+	console.log(`${req.method} ${req.path}`);
+	next();
+});
+
 // Routes
 app.use('/tasks', tasksRouter);
 app.use('/projects', projectsRouter);

@@ -7,7 +7,6 @@ export const projectsRouter = express.Router();
 projectsRouter.get('/', async (req, res) => {
 	const allProjects = await prisma.project.findMany();
 	res.json(allProjects);
-	console.log(allProjects);
 });
 
 projectsRouter.get('/:id', async (req, res) => {
@@ -20,7 +19,6 @@ projectsRouter.get('/:id', async (req, res) => {
 });
 
 projectsRouter.post('/', async (req, res) => {
-	console.log(req.body);
 	const project = await prisma.project.create({
 		data: {
 			title: req.body.title,

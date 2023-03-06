@@ -7,7 +7,6 @@ export const tasksRouter = express.Router();
 tasksRouter.get('/', async (req, res) => {
 	const allTasks = await prisma.task.findMany();
 	res.json(allTasks);
-	console.log(allTasks);
 });
 
 tasksRouter.get('/:id', async (req, res) => {
@@ -20,7 +19,6 @@ tasksRouter.get('/:id', async (req, res) => {
 });
 
 tasksRouter.post('/', async (req, res) => {
-	console.log(req.body);
 	const task = await prisma.task.create({
 		data: {
 			title: req.body.title,
