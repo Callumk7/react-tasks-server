@@ -2,5 +2,5 @@ FROM node:19-alpine
 WORKDIR /app
 COPY . .
 RUN yarn
-CMD ["yarn", "dev"]
+CMD ["yarn", "start"]
 EXPOSE 3000

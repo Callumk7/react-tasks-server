@@ -5,7 +5,8 @@
 	"main": "app.ts",
 	"license": "MIT",
 	"scripts": {
-		"dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts"
+		"dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
+		"start": "node src/app.js"
 	},
 	"devDependencies": {
 		"@types/cors": "^2.8.13",
