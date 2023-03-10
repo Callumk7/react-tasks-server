@@ -13,8 +13,8 @@ app.use(function (req, res, next) {
     next();
 });
 // Routes
-app.use('/tasks', tasks_1.tasksRouter);
-app.use('/projects', projects_1.projectsRouter);
+app.use("/tasks", tasks_1.tasksRouter);
+app.use("/projects", projects_1.projectsRouter);
 app.listen(3000, function () {
-    console.log('Server is running on port 3000');
+    console.log("Server is running on port 3000");
 });
