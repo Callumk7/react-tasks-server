@@ -37,11 +37,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 exports.__esModule = true;
 exports.projectsRouter = void 0;
-var express_1 = require("express");
+var express = require("express");
 var client_1 = require("@prisma/client");
 var prisma = new client_1.PrismaClient();
-exports.projectsRouter = express_1["default"].Router();
-exports.projectsRouter.get('/', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+exports.projectsRouter = express.Router();
+exports.projectsRouter.get("/", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var allProjects;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -53,7 +53,7 @@ exports.projectsRouter.get('/', function (req, res) { return __awaiter(void 0, v
         }
     });
 }); });
-exports.projectsRouter.get('/:id', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+exports.projectsRouter.get("/:id", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var project;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -69,7 +69,7 @@ exports.projectsRouter.get('/:id', function (req, res) { return __awaiter(void 0
         }
     });
 }); });
-exports.projectsRouter.post('/', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+exports.projectsRouter.post("/", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var project;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -87,7 +87,7 @@ exports.projectsRouter.post('/', function (req, res) { return __awaiter(void 0, 
         }
     });
 }); });
-exports.projectsRouter.put('/:id', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+exports.projectsRouter.put("/:id", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var project;
     return __generator(this, function (_a) {
         switch (_a.label) {

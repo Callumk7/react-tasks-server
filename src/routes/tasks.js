@@ -37,11 +37,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 exports.__esModule = true;
 exports.tasksRouter = void 0;
-var express_1 = require("express");
+var express = require("express");
 var client_1 = require("@prisma/client");
 var prisma = new client_1.PrismaClient();
-exports.tasksRouter = express_1["default"].Router();
-exports.tasksRouter.get('/', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+exports.tasksRouter = express.Router();
+exports.tasksRouter.get("/", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var allTasks;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -53,7 +53,7 @@ exports.tasksRouter.get('/', function (req, res) { return __awaiter(void 0, void
         }
     });
 }); });
-exports.tasksRouter.get('/:id', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+exports.tasksRouter.get("/:id", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var task;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -69,7 +69,7 @@ exports.tasksRouter.get('/:id', function (req, res) { return __awaiter(void 0, v
         }
     });
 }); });
-exports.tasksRouter.post('/', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+exports.tasksRouter.post("/", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var task;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -87,7 +87,7 @@ exports.tasksRouter.post('/', function (req, res) { return __awaiter(void 0, voi
         }
     });
 }); });
-exports.tasksRouter.put('/:id', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+exports.tasksRouter.put("/:id", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var task;
     return __generator(this, function (_a) {
         switch (_a.label) {
