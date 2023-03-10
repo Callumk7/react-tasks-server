@@ -2,7 +2,7 @@
   "name": "react-tasks-server",
   "version": "0.0.2",
   "description": "Simple React task manager.",
-  "main": "app.ts",
+  "main": "app.js",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
